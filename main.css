@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+    width: 100%;
+    
+}
+body, html{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    font-size: 16px;
+}
+.grid{
+    /* border: 1px solid black; */
+    padding-left: 20px;
+    /* align-content: center; */
+}
+.cv{
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 0.1fr 0.5fr 1fr;
+
+}    
+section.blank,.profile,.skills{
+    background-color: rgb(247, 243, 243);
+}
+h2, h3{
+    color: rgb(212, 5, 5);
+}
+ span{
+    font-weight: bolder;
+    font-size: 16px;
+    font-style: normal;
+}
+span.course{
+    color: rgb(212, 5, 5);
+    font-style: italic;
+    font-weight: bold;
+    margin-top: ;
+}
+.profile span{
+    font-weight: normal;
+}
+.profile p span{
+    font-weight: bold;
+}
+
+li{
+    text-decoration: none;
+}
+p{
+    font-style: italic;
+}
+.education li{
+    font-weight: bold;
+}
+hr{
+    margin-top: -15px;
+}
+.name hr{
+    margin-top: 5px;
+}
+.skills ol p{
+    font-style: normal;
+    margin-top: -1px;
+}
+
+@media screen and (max-width: 576) {
+    
+        .cv{
+            display: grid;
+            grid-template-columns: 1fr;
+            padding: 1em;
+            grid-row-gap: 100px;
+    }
+}
