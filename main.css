@@ -21,7 +21,7 @@ body, html{
     grid-template-rows: 0.1fr 0.5fr 1fr;
 
 }    
-section.blank,.profile,.skills{
+div.blank,.profile,.skills{
     background-color: rgb(247, 243, 243);
 }
 h2, h3{
@@ -65,12 +65,16 @@ hr{
     margin-top: -1px;
 }
 
-@media screen and (max-width: 576) {
-    
-        .cv{
-            display: grid;
-            grid-template-columns: 1fr;
-            padding: 1em;
-            grid-row-gap: 100px;
+@media screen and (max-width: 576px) {
+    .cv{
+        display: flex;
+        flex-direction: column;
     }
-}
+    .grid{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+}    
